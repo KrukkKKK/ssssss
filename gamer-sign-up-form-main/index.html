@@ -12,20 +12,13 @@
 <body>
   <div class="page">
     <main class="layout">
-
-      <!-- Brand column -->
       <section class="brand" aria-labelledby="page-title">
         <div class="brand__top">
           <img class="brand__logo" src="./assets/images/logo.svg" alt="NEONCORE" width="169" height="32">
-          <!-- Ready count shown in the top bar on mobile and tablet (visual mirror of the form) -->
           <p class="readout__count brand__count" aria-hidden="true" data-ready>0/5 ready</p>
         </div>
-
         <h1 class="brand__title" id="page-title"><span class="brand__slashes" aria-hidden="true">//</span>Join the nexus</h1>
         <p class="brand__tagline">Initialize your NEONCORE identity</p>
-
-        <!-- Operator ID readout: a visual mirror of the form. Hidden from screen
-             readers because the form itself already announces all of this. -->
         <div class="readout" aria-hidden="true">
           <div class="readout__head">
             <p class="readout__label">Operator ID</p>
@@ -41,8 +34,6 @@
           </ul>
         </div>
       </section>
-
-      <!-- Sign-up panel -->
       <div class="panel-wrap">
         <div class="panel">
           <form class="form" id="signup" novalidate aria-labelledby="form-title">
@@ -53,9 +44,7 @@
                 <span class="only-narrow">All required</span>
               </p>
             </div>
-
             <div class="form__fields">
-              <!-- Callsign -->
               <div class="field" data-field="callsign">
                 <label class="field__label" for="callsign">Callsign</label>
                 <div class="field__control">
@@ -70,8 +59,6 @@
                   <span class="field__error-text"></span>
                 </p>
               </div>
-
-              <!-- Email -->
               <div class="field" data-field="email">
                 <label class="field__label" for="email">Email</label>
                 <div class="field__control">
@@ -85,8 +72,6 @@
                   <span class="field__error-text"></span>
                 </p>
               </div>
-
-              <!-- Password -->
               <div class="field field--secret" data-field="password">
                 <label class="field__label" for="password">Password</label>
                 <div class="field__control">
@@ -110,8 +95,6 @@
                   <p class="strength" id="password-strength" aria-live="polite" aria-atomic="true"></p>
                 </div>
               </div>
-
-              <!-- Confirm password -->
               <div class="field field--secret" data-field="confirm">
                 <label class="field__label" for="confirm">Confirm password</label>
                 <div class="field__control">
@@ -128,8 +111,6 @@
                   <span class="field__error-text"></span>
                 </p>
               </div>
-
-              <!-- Terms -->
               <div class="field field--terms" data-field="terms">
                 <div class="check">
                   <input class="check__box" id="terms" name="terms" type="checkbox" required>
@@ -140,16 +121,12 @@
                   <span class="field__error-text">Accept the terms to continue</span>
                 </p>
               </div>
-
               <button class="btn btn--submit" id="submit" type="submit">
                 <span class="btn__label">Initialize account</span>
               </button>
             </div>
-
             <p class="form__alt">Already an operator? <a href="#">Log in</a></p>
           </form>
-
-          <!-- Success view -->
           <section class="success" id="success" aria-labelledby="success-title" hidden>
             <svg class="success__icon" width="78" height="72" viewBox="0 0 78 72" fill="none" aria-hidden="true" focusable="false">
               <defs>
@@ -169,15 +146,13 @@
             <a class="btn" href="#">Continue to log in</a>
           </section>
 
-          <!-- Announcements for screen readers -->
           <p class="sr-only" id="form-status" role="status"></p>
         </div>
       </div>
     </main>
-
     <footer class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">krukk</a>.
     </footer>
   </div>
 </body>
